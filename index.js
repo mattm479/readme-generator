@@ -62,7 +62,11 @@ const questions = [
 ];
 
 // Function call to write README information to specified file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) console.error(err);
+    });
+}
 
 // Function call to prompt user for README information
 function init() {}
