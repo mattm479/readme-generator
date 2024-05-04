@@ -62,6 +62,35 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   
+  ${renderLicenseBadge(data.license)}
+
+  ## Description
+  ${data.description}
+  
+  ## Table of Contents
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  ${(data.contributing === "") ? "" : "3. [Contributing](#contributing)"}
+  ${(data.tests === "") ? "" : "3. [Tests](#tests)"}
+  5. [Questions](#questions)
+  
+  ## Installation
+  ${data.installation}
+  
+  ## Usage
+  ${data.usage}
+  
+  ${(data.contributing === "") ? "" : "## Contributing"}
+  ${data.contributing}
+  
+  ${(data.tests === "") ? "" : "## Tests"}
+  ${data.tests}
+  
+  ${(data.license === "None") ? "" : "## License"}
+  ${renderLicenseSection(data.license)}
+  
+  ## Questions
+  If you have any questions, you can find me on GitHub at [${data.githubUsername}](https://github.com/${data.githubUsername}) or you can email me at [${data.emailAddress}](mailto:${data.emailAddress}).
 `;
 }
 
