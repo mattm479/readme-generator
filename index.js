@@ -69,7 +69,14 @@ function writeToFile(fileName, data) {
 }
 
 // Function call to prompt user for README information
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        const fileName = "output/README.md";
+        const data = generateMarkdown(answers);
+
+        writeToFile(fileName, data);
+    });
+}
 
 // Function call to initialize app
 init();
