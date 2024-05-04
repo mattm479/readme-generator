@@ -36,7 +36,11 @@ function getLicense(license) {
 
 // Function call to generate markdown to display the license badge
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === "None") return "";
+
+  return `[![License](${getLicense(license).badge})](${renderLicenseLink(license)})`;
+}
 
 // Function call to retrieve the license url
 // If there is no license, return an empty string
