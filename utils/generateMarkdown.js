@@ -44,7 +44,11 @@ function renderLicenseBadge(license) {
 
 // Function call to retrieve the license url
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === "None") return "";
+
+  return getLicense(license).link;
+}
 
 // Function call to generate the markdown to display in the License section of the README
 // If there is no license, return an empty string
