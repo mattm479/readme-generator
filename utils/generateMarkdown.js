@@ -52,7 +52,11 @@ function renderLicenseLink(license) {
 
 // Function call to generate the markdown to display in the License section of the README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === "None") return "";
+
+  return `This repository uses the [${license}](${renderLicenseLink(license)}) license.`;
+}
 
 // Function call to generate the markdown to save to the README file
 function generateMarkdown(data) {
