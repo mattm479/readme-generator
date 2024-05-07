@@ -64,7 +64,7 @@ const questions = [
 
 // Function call to write README information to specified file
 function writeToFile(fileName, data) {
-    const dir = "./output";
+    const dir = "./dist";
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir);
     }
