@@ -8,8 +8,6 @@
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  
-  
   - [Questions](#questions)
   
   ## Installation
@@ -17,12 +15,6 @@
   
   ## Usage
   To use this application, follow the prompts that are displayed and then the generated README file can be obtained from the output folder.
-  
-  
-  
-  
-  
-  
   
   ## License
   This repository uses the [MIT](https://opensource.org/licenses/MIT) license.

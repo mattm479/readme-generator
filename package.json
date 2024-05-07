@@ -1,14 +1,26 @@
 {
   "name": "readme-generator",
   "version": "1.0.0",
-  "description": "This application prompts for information to generate a README file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Matthew Miskov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattm479/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "markdown"
+  ],
+  "author": "Matthew Miskov <mattm479@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattm479/readme-generator/issues"
+  },
+  "homepage": "https://github.com/mattm479/readme-generator#readme",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "8.2.6"
   }
 }
