@@ -1,5 +1,6 @@
 // Package imports
 const fs = require("fs");
+const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -63,7 +64,12 @@ const questions = [
 
 // Function call to write README information to specified file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
+    const dir = "./output";
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
+
+    fs.writeFile(path.join(dir, fileName), data, err => {
         if (err) console.error(err);
     });
 }
@@ -71,7 +77,7 @@ function writeToFile(fileName, data) {
 // Function call to prompt user for README information
 function init() {
     inquirer.prompt(questions).then((answers) => {
-        const fileName = "output/README.md";
+        const fileName = "README.md";
         const data = generateMarkdown(answers);
 
         writeToFile(fileName, data);
