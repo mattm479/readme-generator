@@ -68,11 +68,11 @@ function generateMarkdown(data) {
   ${data.description}
   
   ## Table of Contents
-  1. [Installation](#installation)
-  2. [Usage](#usage)
-  ${(data.contributing === "") ? "" : "3. [Contributing](#contributing)"}
-  ${(data.tests === "") ? "" : "3. [Tests](#tests)"}
-  5. [Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  ${(data.contributing === "") ? "" : "- [Contributing](#contributing)"}
+  ${(data.tests === "") ? "" : "- [Tests](#tests)"}
+  - [Questions](#questions)
   
   ## Installation
   ${data.installation}
