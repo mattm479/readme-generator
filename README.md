@@ -14,7 +14,7 @@
   Before cloning the repository, you will need to make sure you have installed [Node.js](https://nodejs.org/en). Once on the Node homepage, click on the Download Node.js (LTS) button. After Node.js has been installed, clone the project code from the following repository - https://github.com/mattm479/readme-generator. Once the repository has been cloned, open a Terminal and point to the root directory of the application and run `npm install`.
   
   ## Usage
-  To use this application, open Terminal in the root of the application. Then run `node index.js` and answer the prompts that are displayed. After answering the prompts, the generated README.md file can be obtained from the dist folder. Do not worry about creating the dist folder - if it does not exist, the application will create one.
+  To use this application, open Terminal in the root of the application. Then run `node index.js` and answer the prompts that are displayed. After answering the prompts, the generated README.md file can be obtained from the dist folder. Do not worry about creating the dist folder - if it does not exist, the application will create one. For a video walkthrough of how to use the application, click on the following link - https://drive.google.com/file/d/1XOMfIeW2c4kOQ9OPt8F7f2PTK_mVHC_n/view.
   
   ## License
   This repository uses the [MIT](https://opensource.org/licenses/MIT) license.
